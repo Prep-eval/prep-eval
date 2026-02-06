@@ -104,6 +104,37 @@
     max-width: 900px;
     margin: 0 auto;
   }
+
+    .protocol-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.protocol-table td {
+  padding: 12px 14px;
+  vertical-align: top;
+}
+
+.protocol-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.protocol-table .step {
+  width: 32%;
+  font-weight: 600;
+}
+
+.protocol-table .description {
+  width: 68%;
+}
+
+.protocol-table .phase td {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  text-align: left;
+}
   </style>
 </head>
 
@@ -150,6 +181,69 @@
        Evaluation is an integral part of the development cycle of any AI system. As AI grows more sophisticated and general, evaluations are becoming increasingly complex and broad in scope, requiring larger multidisciplinary teams, longer timescales and more elaborate evaluation tools and techniques. Moreover, the opportunity to deploy these general-purpose AI systems across various commercial and public-sector contexts and the potential risks associated with these deployments has created a burgeoning need for non-expert groups to evaluate the suitability and safety of these models for use in different contexts. Surprisingly, though, despite the growing focus on evaluations, there is no established protocol or methodology for conducting AI evaluations. Here we aim to address this gap by presenting the “Pre-registration and REporting Protocol for AI Evaluations” (PREP-Eval), a step-by-step guide for planning and conducting AI evaluations ​​that complements existing transparency tools such as model cards and evaluation factsheets. We draw on insights from analogous practices in fields such as software testing, data mining, and psychology, and incorporate a pre-registration requirement that facilitates the documentation and justification of deviations from the original plan, helping to identify questionable research practices such as selective reporting. Our protocol is designed to support a wide range of stakeholders, including third-party evaluators, oversight bodies, and newcomers to the field, but it is particularly valuable for small and medium-sized research or industry teams that are developing new AI tools or integrating existing models into novel applications and may lack established evaluation pipelines. We demonstrate the application of PREP-Eval across six diverse use cases and anticipate that PREP-Eval will be further consolidated and improved through iterative feedback and collaboration with the broad AI community.
       </p>
     </div>
+
+    <div class="section">
+  <h2>PREP-Eval Protocol</h2>
+
+  <table class="protocol-table">
+    <tr class="phase">
+      <td colspan="2"><strong>Phase 1: Goals and Objectives</strong></td>
+    </tr>
+
+    <tr>
+      <td class="step">1.1 Determine project purpose</td>
+      <td class="description">
+        Describe the relevant background to the evaluation project, including the terminology,
+        project goals, and success criteria.
+      </td>
+    </tr>
+
+    <tr>
+      <td class="step">1.2 Determine technical objectives</td>
+      <td class="description">
+        Identify and justify the targets of the evaluation, e.g., an AI system or a new evaluation
+        method, and describe the success criteria in terms of metrics and uncertainty.
+      </td>
+    </tr>
+
+    <tr>
+      <td class="step">1.3 Situation assessment</td>
+      <td class="description">
+        Develop an inventory of resources, identify requirements and constraints, anticipate risks
+        and contingencies, and assess current understanding of the evaluation targets.
+      </td>
+    </tr>
+
+    <tr class="phase">
+      <td colspan="2"><strong>Phase 2: Evaluation Design</strong></td>
+    </tr>
+
+    <tr>
+      <td class="step">2.1 Identify potential evaluation methods</td>
+      <td class="description">
+        Review current evaluation methods, assess maturity and adoption, and monitor emerging
+        approaches such as red teaming or human evaluations.
+      </td>
+    </tr>
+
+    <tr>
+      <td class="step">2.2 Selection of evaluation methods</td>
+      <td class="description">
+        Select an evaluation method and rigorously justify your choice. If no suitable methods
+        exist, design or build new ones.
+      </td>
+    </tr>
+
+    <tr>
+      <td class="step">2.3 Analysis specification</td>
+      <td class="description">
+        Decide and justify how evaluation data will be analysed and what estimators will be
+        produced, including metrics and error analysis.
+      </td>
+    </tr>
+  </table>
+</div>
+
 
   </div>
 
