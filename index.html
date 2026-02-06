@@ -177,6 +177,18 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
+    .final-points {
+  max-width: 900px;
+  margin: 15px auto 20px auto;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.final-points li {
+  margin-bottom: 8px;
+}
     
   </style>
 </head>
@@ -426,8 +438,27 @@
   </table>
 </div>
 
+      <div class="section">
+  <h2>Implementation and Future Steps</h2>
 
-  <!-- etc -->
+  <p>
+    To illustrate how the protocol is applied, we implement it across several evaluation scenarios, which are presented in the appendix of the paper:
+  </p>
+
+  <ul class="final-points">
+    <li>Red-teaming GPT-3 to find prompts with a high rate of false statements.</li>
+    <li>Evaluating Interactional Fairness in Multi-Agent LLM-Based Systems.</li>
+    <li>Evaluating the performance of an LLM-based customer service agent.</li>
+    <li>A meta-evaluation for diversity and coverage of test cases.</li>
+    <li>Evaluating the capabilities of LLMs that incorporate metacognition.</li>
+    <li>Choosing between two AI systems, in a face recognition domain.</li>
+  </ul>
+
+  <p>
+    We plan to associate the protocol with a repository of sample evaluations, building from existing repositories of AI cases and evaluation, for practitioners to take inspiration from.
+    
+    We anticipate that PREP-Eval will continue to evolve in response to feedback from the broader community, and in particular from its users. We expect the protocol to be refined as it is applied to a wider range of use cases and as additional implementation details are specified. 
+  </p>
 </div>
 
 
