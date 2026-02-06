@@ -195,12 +195,34 @@
 .final-section ul {
   text-align: left;     
   max-width: 700px;
-  margin: 0 auto;
+  margin: 32px auto 32px auto;
   padding-left: 20px;
 }
 
 .final-section li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+  .citation-section {
+  text-align: center;
+}
+
+.citation-section p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: justify;
+}
+
+.bibtex {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
 }
     
   </style>
@@ -469,6 +491,23 @@
   </p>
 </div>
 
+  <div class="section citation-section highlight-section">
+  <h2>How to Cite</h2>
+
+  <p>
+    If you use this protocol in your work, please cite the paper as follows:
+  </p>
+
+  <pre class="bibtex">
+@unpublished{carro2025prepeval,
+  title     = {PREP-Eval: A Pre-registration and REporting Protocol for AI Evaluations},
+  author    = {Carro, María Victoria and Burnell, Ryan and Mougan, Carlos and Reuel, Anka and Schellaert, Wout and Salaudeen, Olawale Elijah and Zhou, Lexin and Paskov, Patricia and Cohn, Anthony G. and Hernandez-Orallo, Jose},
+  year      = {2025},
+  note      = {Manuscript under review},
+  url       = {https://pre-eval.github.io}
+}
+  </pre>
+</div>
 
 
   </div>
